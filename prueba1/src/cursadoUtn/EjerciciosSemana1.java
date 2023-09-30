@@ -91,8 +91,9 @@ public class EjerciciosSemana1 {
 	 else {
 		  System.out.println("Esta persona pertenece al segmento de ingresos altos");
 	 }
+	 */
  }
 }
 
-*/
+
 	 
