@@ -2,6 +2,8 @@ package cursadoUtn;
 
 import java.util.Arrays;
 
+//import javax.imageio.metadata.IIOMetadataFormatImpl;
+
 public class EjerciciosSemana2 {
 	public static void main(String[] args) {
 		
@@ -53,7 +55,23 @@ public class EjerciciosSemana2 {
 		        }
 		    }
 		    System.out.println(Arrays.toString(numeros));
-		}		
-}
-	*/
+		    
+		    1- c. dado un vector de números, y un número X, que sume todos los números >X y
+retorne el resultado
+
+		int numeros [] = new int [] {2,9,41,25,13,87,43,22,54};
+		int numeroX = 24;
+		int suma = 0;
+		for (int i = 0; i < numeros.length; i++) {
+			if (numeros[i] > numeroX) {
+				suma = suma + numeros[i];
+			}
+		}
+		System.out.println("La suma de todos los numeros mayores a " + numeroX + " suman: " + suma);
+	}
+	
+}	
+*/	
+
+	
 	
