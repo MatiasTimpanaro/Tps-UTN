@@ -1,6 +1,6 @@
 package cursadoUtn;
 
-public class Ejercicio2Clase3 {
+public class Clase3Ejercicio2 {
 	public static void main(String[] args) {
 		
 		//2. Genere una clase que tenga los métodos para realizar la codificación y decodificación
