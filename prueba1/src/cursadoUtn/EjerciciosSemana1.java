@@ -1,8 +1,8 @@
 package cursadoUtn;
-
+/*
 public class EjerciciosSemana1 {
  public static void main(String[] args) {
-/*
+
  EJERCICIO 1 a
  
  	 int numeroInicio = 5;
@@ -91,9 +91,10 @@ public class EjerciciosSemana1 {
 	 else {
 		  System.out.println("Esta persona pertenece al segmento de ingresos altos");
 	 }
-	 */
+
+	 	 }
  }
 }
 
-
+	 */
 	 

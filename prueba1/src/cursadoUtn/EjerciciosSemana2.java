@@ -1,5 +1,6 @@
 package cursadoUtn;
 
+/* 
 import java.util.Arrays;
 
 //import javax.imageio.metadata.IIOMetadataFormatImpl;
@@ -7,7 +8,6 @@ import java.util.Arrays;
 public class EjerciciosSemana2 {
 	public static void main(String[] args) {
 		
-		/* 
 		1-a. Dado un String y una letra, que cuente la cantidad de apariciones de la letra en
 		el String
 
@@ -68,10 +68,18 @@ retorne el resultado
 			}
 		}
 		System.out.println("La suma de todos los numeros mayores a " + numeroX + " suman: " + suma);
+	
+	
+	2. Genere una clase que tenga los métodos para realizar la codificación y decodificación
+de un string, dado un número de desplazamiento. (en la otra clase)
+	
+	
+	
+	
 	}
 	
 }	
-*/	
-
+	
+*/
 	
 	
