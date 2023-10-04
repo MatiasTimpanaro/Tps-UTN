@@ -6,15 +6,15 @@ public class Clase5Persona {
 
 	private String nombre;
 	private String apellido;
-	private String fechaDeNacimiento;
+	private LocalDateTime fechaDeNacimiento;
 	private int edad;
 	
-	public Clase5Persona(String nom, String ape, String fNacim, int ed) {
-		this.nombre = nom;
-		this.apellido = ape;
-		this.fechaDeNacimiento = fNacim;
-		this.edad = ed;
+	public Clase5Persona(String nombre, String apellido, LocalDateTime fechaDeNacimiento, int edad) {
 		
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.fechaDeNacimiento = fechaDeNacimiento;
+		this.edad = edad;
 	}
 
 	public String getNombre() {
@@ -33,11 +33,11 @@ public class Clase5Persona {
 		this.apellido = apellido;
 	}
 
-	public String getFechaDeNacimiento() {
+	public LocalDateTime getFechaDeNacimiento() {
 		return this.fechaDeNacimiento;
 	}
 
-	public void setFechaDeNacimiento(String fechaDeNacimiento) {
+	public void setFechaDeNacimiento(LocalDateTime fechaDeNacimiento) {
 		this.fechaDeNacimiento = fechaDeNacimiento;
 	}
 
