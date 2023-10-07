@@ -2,58 +2,58 @@ package clase5Ejercicios;
 
 public class Clase5Producto {
 	
-	private String nombre;
-	private String codigo;
-	private String precio;
-	private float precioFinal;
+	private String nombreProducto;
+	private String codigoProducto;
+	private String precioProducto;
+	private float precioFinalProducto;
 	
 	
-	public Clase5Producto(String nombre, String codigo, String precio, float precioFinal) {
+	public Clase5Producto(String nombreProducto, String codigoProducto, String precioProducto, float precioFinalProducto) {
 		
-		this.nombre = nombre;
-		this.codigo = codigo;
-		this.precio = precio;
-		this.precioFinal = precioFinal;
+		this.nombreProducto = nombreProducto;
+		this.codigoProducto = codigoProducto;
+		this.precioProducto = precioProducto;
+		this.precioFinalProducto = precioFinalProducto;
 	}
 
 
-	public String getNombre() {
-		return this.nombre;
+	public String getNombreProducto() {
+		return this.nombreProducto;
 	}
 
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setNombreProducto(String nombreProducto) {
+		this.nombreProducto = nombreProducto;
 	}
 
 
-	public String getCodigo() {
-		return this.codigo;
+	public String getCodigoProducto() {
+		return this.codigoProducto;
 	}
 
 
-	public void setCodigo(String codigo) {
-		this.codigo = codigo;
+	public void setCodigoProducto(String codigoProducto) {
+		this.codigoProducto = codigoProducto;
 	}
 
 
-	public String getPrecio() {
-		return this.precio;
+	public String getPrecioProducto() {
+		return this.precioProducto;
 	}
 
 
-	public void setPrecio(String precio) {
-		this.precio = precio;
+	public void setPrecioProducto(String precioProducto) {
+		this.precioProducto = precioProducto;
 	}
 
 
-	public float getPrecioFinal() {
-		return this.precioFinal;
+	public float getPrecioFinalProducto() {
+		return this.precioFinalProducto;
 	}
 
 
-	public void setPrecioFinal(float precioFinal) {
-		this.precioFinal = precioFinal;
+	public void setPrecioFinalProducto(float precioFinalProducto) {
+		this.precioFinalProducto = precioFinalProducto;
 	}
 	
 	
