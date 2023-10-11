@@ -1,4 +1,4 @@
-package clase5Ejercicios;
+package semana3;
 
 public class Clase5Producto {
 	

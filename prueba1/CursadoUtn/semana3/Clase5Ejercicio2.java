@@ -1,4 +1,4 @@
-package clase5Ejercicios;
+package semana3;
 
 import java.nio.file.Paths;
 import java.time.LocalDateTime;

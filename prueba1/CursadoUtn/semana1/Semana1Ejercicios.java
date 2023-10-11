@@ -1,4 +1,4 @@
-package cursadoUtn;
+package semana1;
 /*
 public class EjerciciosSemana1 {
  public static void main(String[] args) {

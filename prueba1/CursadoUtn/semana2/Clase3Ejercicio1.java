@@ -1,11 +1,11 @@
-package cursadoUtn;
+package semana2;
 
 
 import java.util.Arrays;
 
 //import javax.imageio.metadata.IIOMetadataFormatImpl;
 
-public class Semana2Ejercicios {
+public class Clase3Ejercicio1 {
 	public static void main(String[] args) {
 		
 		//1-a. Dado un String y una letra, que cuente la cantidad de apariciones de la letra en

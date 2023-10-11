@@ -1,4 +1,4 @@
-package cursadoUtn;
+package semana2;
 
 import java.util.Scanner;
 import java.util.Arrays;

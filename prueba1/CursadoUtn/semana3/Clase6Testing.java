@@ -1,4 +1,4 @@
-package cursadoUtn;
+package semana3;
 
 import static org.junit.jupiter.api.Assertions.*;
 

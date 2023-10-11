@@ -1,4 +1,4 @@
-package cursadoUtn;
+package semana3;
 
 public class Clase6Calculadora {
 	
