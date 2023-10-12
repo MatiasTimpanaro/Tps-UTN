@@ -12,13 +12,11 @@ public static void main(String[] args) {
 	//de productos, arme los objetos correspondientes y con el método de carrito
 
 	String listaDeProductos = "listaDeProductos.txt";
-	Producto p1 = new Producto ("", "", "", 0);
-	Producto p2 = new Producto ("", "", "", 0);
-	Producto p3 = new Producto ("", "", "", 0);
-	Carrito c1 = new Carrito ("", "", "", LocalDateTime.of(2023,10,06,20,18,00), 0);	
+	Producto p1 = new Producto ("", "", 0);
+	Producto p2 = new Producto ("", "", 0);
+	Producto p3 = new Producto ("", "", 0);
 	int contador = 0;
-	float precioFinalContador = 0;
-	 
+	
 	 
 	try {
 		for (String linea : Files.readAllLines(Paths.get(listaDeProductos))) {
@@ -28,33 +26,28 @@ public static void main(String[] args) {
 			
             String nombre = datos[0];
             String codigo = datos[1];
-            String precio = datos[2];
-            float precioFinal = Float.parseFloat(datos[2]);
+            float precio = Float.parseFloat(datos[2]);
+           
            
             if (contador == 0) {
-                p1 = new Producto(nombre, codigo, precio, precioFinal);
+                p1 = new Producto(nombre, codigo, precio);
             } else if (contador == 1) {
-                p2 = new Producto(nombre, codigo, precio, precioFinal);
+                p2 = new Producto(nombre, codigo, precio);
             } else if (contador == 2) {
-                p3 = new Producto(nombre, codigo, precio, precioFinal);
+                p3 = new Producto(nombre, codigo, precio);
             }
-            precioFinalContador = precioFinalContador + precioFinal;
-           
-            c1.setCostoFinalCarrito(precioFinalContador);
-            
+                       
             contador++; 
 		}	
 	}
-		
-		c1.setProducto1Carrito(p1.getNombreProducto());
-		c1.setProducto2Carrito(p2.getNombreProducto());
-		c1.setProducto3Carrito(p3.getNombreProducto());
+		Carrito c1 = new Carrito (p1, p2, p3, LocalDateTime.of(2023,10,06,20,18,00));
+				
 				
 		System.out.println("Estas llevando estos productos:");
 		System.out.println(p1.getNombreProducto() + ", " + p2.getNombreProducto() + ", "+p3.getNombreProducto() +".");
 		System.out.println("Los codigos de son: \n" + p1.getCodigoProducto() + ", " + p2.getCodigoProducto() + ", " + p3.getCodigoProducto());
-		System.out.println("Valen lo siguiente: \n$" + p1.getPrecioFinalProducto() + ", $" + p2.getPrecioFinalProducto() + ", $" + p3.getPrecioFinalProducto());
-		System.out.println("El valor total de todos los productos es de: $" + c1.getCostoFinalCarrito());
+		System.out.println("Valen lo siguiente: \n$" + p1.PrecioFinalProducto() + ", $" + p2.PrecioFinalProducto() + ", $" + p3.PrecioFinalProducto());
+		System.out.println("El valor total de todos los productos es de: $" + c1.CostoFinalCarrito());
 	}
 	 catch (IOException e) {
 		System.out.println("TODO LO QUE PUDO HABER FALLADO, FALLó");

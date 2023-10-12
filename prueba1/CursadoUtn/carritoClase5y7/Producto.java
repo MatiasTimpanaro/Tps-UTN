@@ -4,17 +4,16 @@ public class Producto {
 	
 	private String nombreProducto;
 	private String codigoProducto;
-	private String precioProducto;
-	private float precioFinalProducto;
+	private float precioProducto;
 	
 	
-	public Producto(String nombreProducto, String codigoProducto, String precioProducto, float precioFinalProducto) {
+	
+	public Producto(String nombreProducto, String codigoProducto, float precioProducto) {
 		
 		this.nombreProducto = nombreProducto;
 		this.codigoProducto = codigoProducto;
 		this.precioProducto = precioProducto;
-		this.precioFinalProducto = precioFinalProducto;
-	}
+		}
 
 
 	public String getNombreProducto() {
@@ -37,26 +36,19 @@ public class Producto {
 	}
 
 
-	public String getPrecioProducto() {
+	public float getPrecioProducto() {
 		return this.precioProducto;
 	}
 
 
-	public void setPrecioProducto(String precioProducto) {
+	public void setPrecioProducto(float precioProducto) {
 		this.precioProducto = precioProducto;
 	}
 
 
-	public float getPrecioFinalProducto() {
-		return this.precioFinalProducto;
+	public float PrecioFinalProducto() {
+		return this.precioProducto;
 	}
-
-
-	public void setPrecioFinalProducto(float precioFinalProducto) {
-		this.precioFinalProducto = precioFinalProducto;
-	}
-	
-	
 	
 	
 
