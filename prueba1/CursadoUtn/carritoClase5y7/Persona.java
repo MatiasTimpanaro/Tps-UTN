@@ -2,14 +2,14 @@ package carritoClase5y7;
 
 import java.time.LocalDateTime;
 
-public class Clase5Persona {
+public class Persona {
 
 	private String nombre;
 	private String apellido;
 	private LocalDateTime fechaDeNacimiento;
 	private int edad;
 	
-	public Clase5Persona(String nombre, String apellido, LocalDateTime fechaDeNacimiento, int edad) {
+	public Persona(String nombre, String apellido, LocalDateTime fechaDeNacimiento, int edad) {
 		
 		this.nombre = nombre;
 		this.apellido = apellido;

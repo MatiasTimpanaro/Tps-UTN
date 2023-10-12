@@ -1,6 +1,6 @@
 package carritoClase5y7;
 
-public class Clase5Producto {
+public class Producto {
 	
 	private String nombreProducto;
 	private String codigoProducto;
@@ -8,7 +8,7 @@ public class Clase5Producto {
 	private float precioFinalProducto;
 	
 	
-	public Clase5Producto(String nombreProducto, String codigoProducto, String precioProducto, float precioFinalProducto) {
+	public Producto(String nombreProducto, String codigoProducto, String precioProducto, float precioFinalProducto) {
 		
 		this.nombreProducto = nombreProducto;
 		this.codigoProducto = codigoProducto;

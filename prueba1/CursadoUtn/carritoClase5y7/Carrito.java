@@ -2,7 +2,7 @@ package carritoClase5y7;
 
 import java.time.LocalDateTime;
 
-public class Clase5Carrito {
+public class Carrito {
 	
 	private String producto1Carrito;
 	private String producto2Carrito;
@@ -10,7 +10,7 @@ public class Clase5Carrito {
 	private LocalDateTime fechaDeCompraCarrito;
 	private float costoFinalCarrito;
 	
-	public Clase5Carrito(String producto1Carrito, String producto2Carrito, String producto3Carrito, LocalDateTime fechaDeCompraCarrito,
+	public Carrito(String producto1Carrito, String producto2Carrito, String producto3Carrito, LocalDateTime fechaDeCompraCarrito,
 			float costoFinalCarrito) {
 		
 		this.producto1Carrito = producto1Carrito;

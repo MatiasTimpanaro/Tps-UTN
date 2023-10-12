@@ -12,10 +12,10 @@ public static void main(String[] args) {
 	//de productos, arme los objetos correspondientes y con el método de carrito
 
 	String listaDeProductos = "listaDeProductos.txt";
-	Clase5Producto p1 = new Clase5Producto ("", "", "", 0);
-	Clase5Producto p2 = new Clase5Producto ("", "", "", 0);
-	Clase5Producto p3 = new Clase5Producto ("", "", "", 0);
-	Clase5Carrito c1 = new Clase5Carrito ("", "", "", LocalDateTime.of(2023,10,06,20,18,00), 0);	
+	Producto p1 = new Producto ("", "", "", 0);
+	Producto p2 = new Producto ("", "", "", 0);
+	Producto p3 = new Producto ("", "", "", 0);
+	Carrito c1 = new Carrito ("", "", "", LocalDateTime.of(2023,10,06,20,18,00), 0);	
 	int contador = 0;
 	float precioFinalContador = 0;
 	 
@@ -32,11 +32,11 @@ public static void main(String[] args) {
             float precioFinal = Float.parseFloat(datos[2]);
            
             if (contador == 0) {
-                p1 = new Clase5Producto(nombre, codigo, precio, precioFinal);
+                p1 = new Producto(nombre, codigo, precio, precioFinal);
             } else if (contador == 1) {
-                p2 = new Clase5Producto(nombre, codigo, precio, precioFinal);
+                p2 = new Producto(nombre, codigo, precio, precioFinal);
             } else if (contador == 2) {
-                p3 = new Clase5Producto(nombre, codigo, precio, precioFinal);
+                p3 = new Producto(nombre, codigo, precio, precioFinal);
             }
             precioFinalContador = precioFinalContador + precioFinal;
            
