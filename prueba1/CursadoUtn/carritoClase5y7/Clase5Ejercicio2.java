@@ -40,16 +40,24 @@ public static void main(String[] args) {
             contador++; 
 		}	
 	}
+		
 		Carrito c1 = new Carrito (p1, p2, p3, LocalDateTime.of(2023,10,06,20,18,00));
-				
-				
+		
+		Descuento desFijo = new DescuentoFijo(1000);	//Descuento fijo de $690
+		Descuento desPorcentaje = new DescuentoPorcentaje ((float) 0.20); //Descuento por porcentaje del 50%
+		Descuento desPorcentajeConTope = new DescuentoPorcentajeConTope (0.40f);
+		
+		desPorcentajeConTope.setValorDesc(0.30f);
+		
 		System.out.println("Estas llevando estos productos:");
 		System.out.println(p1.getNombreProducto() + ", " + p2.getNombreProducto() + ", "+p3.getNombreProducto() +".");
 		System.out.println("Los codigos de son: \n" + p1.getCodigoProducto() + ", " + p2.getCodigoProducto() + ", " + p3.getCodigoProducto());
 		System.out.println("Valen lo siguiente: \n$" + p1.PrecioFinalProducto() + ", $" + p2.PrecioFinalProducto() + ", $" + p3.PrecioFinalProducto());
-		System.out.println("El valor total de todos los productos es de: $" + c1.CostoFinalCarrito());
-	}
-	 catch (IOException e) {
+		System.out.println("El valor total de todos los productos es de: $" + c1.CostoFinalCarrito(desPorcentajeConTope)); //En "c1.CostoFinalCarrito())" colocar que tipo 
+		}																									  //de descuento es (desPorcentaje) - (desFijo) - 
+																											//(desPorcentajeConTope)
+	catch (IOException e
+			 ) {																						
 		System.out.println("TODO LO QUE PUDO HABER FALLADO, FALLó");
 	}
 	

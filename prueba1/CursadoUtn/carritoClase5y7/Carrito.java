@@ -50,8 +50,9 @@ public class Carrito {
 		this.fechaDeCompraCarrito = fechaDeCompraCarrito;
 	}
 
-	public float CostoFinalCarrito() {
-		return (this.producto1Carrito.PrecioFinalProducto() + this.producto2Carrito.PrecioFinalProducto() + this.producto3Carrito.PrecioFinalProducto());
+	public float CostoFinalCarrito(Descuento desc) {
+		float total = desc.valorFinal(this.producto1Carrito.PrecioFinalProducto() + this.producto2Carrito.PrecioFinalProducto() + this.producto3Carrito.PrecioFinalProducto());
+		return total;
 	}
 
 	
