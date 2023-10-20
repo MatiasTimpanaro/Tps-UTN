@@ -1,6 +1,5 @@
 package carritoClase5y7;
 
-import static org.junit.Assert.assertSame;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.time.LocalDateTime;
@@ -14,10 +13,14 @@ void descuentoPrecios1Test() {
 	Producto p1 = new Producto ("jabon", "1234a", 500);
 	Producto p2 = new Producto ("Atun", "1235b", 1000);
 	Producto p3 = new Producto ("Papas fritas", "1236c", 1500);
-	Carrito c1 = new Carrito (p1, p2, p3, LocalDateTime.of(2023,10,06,20,18,00));
+	
+	Carrito c1 = new Carrito ( null, LocalDateTime.of(2023,10,06,20,18,00));
+		c1.agregarProducto(p1);
+		c1.agregarProducto(p2);
+		c1.agregarProducto(p3);
 	
 	Descuento desFijo = new DescuentoFijo(1000);
-	assertNotEquals (desFijo.getValorDesc(), c1.CostoFinalCarrito(desFijo));
+	assertNotEquals(desFijo.getValorDesc(), c1.CostoFinalCarrito(desFijo));
 }
 
 @Test
@@ -25,9 +28,13 @@ void descuentoPrecios2Test() {
 	Producto p1 = new Producto ("jabon", "1234a", 500);
 	Producto p2 = new Producto ("Atun", "1235b", 1000);
 	Producto p3 = new Producto ("Papas fritas", "1236c", 1500);
-	Carrito c1 = new Carrito (p1, p2, p3, LocalDateTime.of(2023,10,06,20,18,00));
 	
-	Descuento desFijo = new DescuentoFijo(1000);
+	Carrito c1 = new Carrito ( null, LocalDateTime.of(2023,10,06,20,18,00));
+		c1.agregarProducto(p1);
+		c1.agregarProducto(p2);
+		c1.agregarProducto(p3);
+	
+		Descuento desFijo = new DescuentoFijo(1000);
 	
 	assertNotNull (c1.CostoFinalCarrito(desFijo));
 }		
@@ -37,7 +44,11 @@ void descuentoPrecios2Test() {
 		Producto p1 = new Producto ("jabon", "1234a", 500);
 		Producto p2 = new Producto ("Atun", "1235b", 1000);
 		Producto p3 = new Producto ("Papas fritas", "1236c", 1500);
-		Carrito c1 = new Carrito (p1, p2, p3, LocalDateTime.of(2023,10,06,20,18,00));
+		
+		Carrito c1 = new Carrito ( null, LocalDateTime.of(2023,10,06,20,18,00));
+			c1.agregarProducto(p1);
+			c1.agregarProducto(p2);
+			c1.agregarProducto(p3);
 		
 		Descuento desFijo = new DescuentoFijo(1000);
 		
@@ -51,7 +62,11 @@ void descuentoPrecios2Test() {
 		Producto p1 = new Producto ("jabon", "1234a", 500);
 		Producto p2 = new Producto ("Atun", "1235b", 1000);
 		Producto p3 = new Producto ("Papas fritas", "1236c", 1500);
-		Carrito c1 = new Carrito (p1, p2, p3, LocalDateTime.of(2023,10,06,20,18,00));
+		
+		Carrito c1 = new Carrito ( null, LocalDateTime.of(2023,10,06,20,18,00));
+			c1.agregarProducto(p1);
+			c1.agregarProducto(p2);
+			c1.agregarProducto(p3);
 		
 		Descuento desPorcentaje = new DescuentoPorcentaje ((float) 0.50);
 		
@@ -65,7 +80,11 @@ void descuentoPrecios2Test() {
 		Producto p1 = new Producto ("jabon", "1234a", 500);
 		Producto p2 = new Producto ("Atun", "1235b", 1000);
 		Producto p3 = new Producto ("Papas fritas", "1236c", 1500);
-		Carrito c1 = new Carrito (p1, p2, p3, LocalDateTime.of(2023,10,06,20,18,00));
+		
+		Carrito c1 = new Carrito ( null, LocalDateTime.of(2023,10,06,20,18,00));
+			c1.agregarProducto(p1);
+			c1.agregarProducto(p2);
+			c1.agregarProducto(p3);
 		
 		Descuento desPorcentajeConTope = new DescuentoPorcentajeConTope (0.40f);
 		
