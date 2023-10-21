@@ -45,13 +45,22 @@ public class Carrito {
 		this.fechaDeCompraCarrito = fechaDeCompraCarrito;
 	}
 
-	public float CostoFinalCarrito(Descuento desc) {
+	public float CostoFinalCarrito(Descuento desc) throws ExceptionValor0, ExceptionValorNegativo {
 		float total = 0;
 		for (Producto item : productosCarrito) {
 			total += item.PrecioFinalProducto();
 		}
+		
+	if (total <= 0) {
+		throw new ExceptionValor0 ();
+		
+	}
+	
+	else if (desc.valorFinal(total) < 0) {
+		throw new ExceptionValorNegativo();
+		}
+	else {
 		return desc.valorFinal(total);
 	}
-
-	
+ }	
 }

@@ -8,7 +8,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 
 public class Clase5Ejercicio2 {
-public static void main(String[] args) {
+
+	
+	public static void main(String[] args) {
 	
 	//2. En un programa main, lea de un archivo, por ejemplo separado por Tabs o comas, una lista
 	//de productos, arme los objetos correspondientes y con el método de carrito
@@ -35,21 +37,21 @@ public static void main(String[] args) {
 		}	
 	}
 		
-	Descuento desFijo = new DescuentoFijo(690);	//Descuento fijo de $690
+	Descuento desFijo = new DescuentoFijo(200);	//Descuento fijo de $200
 	Descuento desPorcentaje = new DescuentoPorcentaje ((float) 0.50); //Descuento por porcentaje del 50%
 	Descuento desPorcentajeConTope = new DescuentoPorcentajeConTope (0.40f); //Tope de descuento, pasado este porcentaje, no se aplica el descuento
 	desPorcentajeConTope.setValorDesc(0.30f);//valor actual del descuento con tope
 
-		
-	System.out.println("El valor total de todos los productos es de: $" + c1.CostoFinalCarrito(desFijo)); //En "c1.CostoFinalCarrito())" colocar que tipo 
-																										//de descuento es (desPorcentaje) - (desFijo) -
-																										//(desPorcentajeConTope)
-	}																									   
+		try {
+			System.out.println("El valor total de todos los productos es de: $" + c1.CostoFinalCarrito(desFijo));//En "c1.CostoFinalCarrito())" colocar que tipo
+	} catch (ExceptionValor0 | ExceptionValorNegativo e) {														//de descuento es (desPorcentaje) - (desFijo) -
+			e.printStackTrace();																				//(desPorcentajeConTope)
+		}		
+}																									   
 																								   		  
 	catch (IOException e
 			 ) {																						
 		System.out.println("TODO LO QUE PUDO HABER FALLADO, FALLó");
 	}
-	
-}
+ }
 }
