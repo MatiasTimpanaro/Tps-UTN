@@ -1,0 +1,5 @@
+El_Martín_Fierro José_Hernández 1872 Poesía_gauchesca 336
+El_Perjurio_De_La_nieve Adolfo_Bioy_casares 1944 Ficcion 246
+La_Metamorfosis Franz_Kafka 1915 Ficción_surrealista 128
+El_Aleph Jorge_Luis_Borges 1949 Cuentos/Ficción 146
+Viaje_al_centro_de_la_Tierra Julio_Verne 1864 Ciencia_ficción/Aventura 320
