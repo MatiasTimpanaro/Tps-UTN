@@ -5,9 +5,9 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class RepositoryInfo {
 
-	String name;
-	String description;
-	String html_url;
+	private String name;
+	private String description;
+	private String html_url;
 	
 	  
 
