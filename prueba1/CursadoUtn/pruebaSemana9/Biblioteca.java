@@ -1,7 +1,5 @@
 package pruebaSemana9;
 
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,11 +17,27 @@ public class Biblioteca {
 	}
 
 
-	public void agregarLibrosDisponibles(Libro l) {
+	public void agregarLibroNuevo(Libro l) {
 
 			this.listaDeLibrosDisponibles.add(l);
 
 	}
+	
+	public void prestarLibro(Libro m) {
+		
+		this.listaDeLibrosPrestados.add(m);
+		this.listaDeLibrosDisponibles.remove(m);
+	}
+	
+	public void devolverLibro (Libro m) {
+		this.listaDeLibrosPrestados.remove(m);
+		this.listaDeLibrosDisponibles.add(m);
+	}
+	
+	public List<Libro> getListaDeLibrosPrestados() {
+		return listaDeLibrosPrestados;
+	}
+
 
 	public List<Libro> mostrarLibrosDisponibles (){
 		
@@ -40,23 +54,15 @@ public class Biblioteca {
 				int añoDePublicacion = Integer.parseInt(datos[2]);
 				String genero = datos [3];
 				int numeroDePaginas = Integer.parseInt(datos[4]);
-            
-                             
-				librosDisponibles.agregarLibrosDisponibles(new Libro(titulo, autor, añoDePublicacion, genero, numeroDePaginas));
+                 
+				librosDisponibles.agregarLibroNuevo(new Libro(titulo, autor, añoDePublicacion, genero, numeroDePaginas));
     	 
             contador++; 
             System.out.println(linea);
 		}	
 	}
-		
 		return listaDeLibrosDisponibles;
 		
 	}
-	
-	public void setListaDeLibrosPrestados(ArrayList<Libro> listaDeLibrosPrestados) {
-		this.listaDeLibrosPrestados = listaDeLibrosPrestados;
-	}
-	
-	
-
+		
 }

@@ -1,13 +1,14 @@
 package pruebaSemana9;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Persona {
 
 	private String nombre;
 	private String apellido;
 	private int edad;
-	private ArrayList <Libro> listaDeLibrosPrestados;
+	private List <Libro> listaDeLibrosPrestados;
 	
 	public Persona(String nombre, String apellido, int edad, ArrayList<Libro> listaDeLibrosPrestados) {
 		super();
@@ -44,12 +45,12 @@ public class Persona {
 		this.edad = edad;
 	}
 
-	public ArrayList<Libro> getListaDeLibrosPrestados() {
+	public List<Libro> getListaDeLibrosPrestados() {
 		return listaDeLibrosPrestados;
 	}
 
-	public void setListaDeLibrosPrestados(ArrayList<Libro> listaDeLibrosPrestados) {
-		this.listaDeLibrosPrestados = listaDeLibrosPrestados;
+	public void tomarPrestadoUnLibro(Libro l) {
+		this.listaDeLibrosPrestados.add(l);
 	}
 
 	
