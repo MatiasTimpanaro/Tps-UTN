@@ -4,9 +4,7 @@ import java.util.Scanner;
 
 public class Escribir {
 	
-	private String escritura;
-
-	public void getEscritura() {
+		public void getEscritura() {
 		Scanner scn = new Scanner(System.in);
 		String opcion = "0";
 		String mensaje;
@@ -17,7 +15,7 @@ public class Escribir {
 		System.out.println("Escriba su nombre:");
 		nombre = scn.nextLine();
 		
-		while (opcion=="0") {
+		while (opcion.equals("0")) {
 			
 			System.out.println("\n SELECCIONE OPCION:\n Para escribir mensaje presione 1\n Para recibir mensajes presione 2 \n Para finalizar presione 3");
 			opcion = scn.nextLine();
@@ -32,6 +30,7 @@ public class Escribir {
 					System.out.println("\n \t Sus mensajes:");
 					chat.getChat();
 					opcion="0";
+					
 				}else if(opcion.equals("3")){
 					System.out.println("\n Programa finalizado");
 					break;
@@ -41,6 +40,6 @@ public class Escribir {
 					opcion="0";
 				}
 		}
-			
+			scn.close();
 	}
 }
